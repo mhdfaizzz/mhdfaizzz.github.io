@@ -16,7 +16,7 @@
     background-color: beige; /* set the background color here */
     color: black;/* set the text color to black here */
     font-family: Arial,helvetica,sans-serif; /* set the font here */
-    text-align: center;/* set the text alignment here */
+    /*text-align: center;/* set the text alignment here */
    }
 
   footer {
@@ -56,6 +56,14 @@
   /* this controls how the bullet points in the resume page looks */
   ul {
     display: table;
-    margin: 0 auto;
+    margin: 0;
+    /*text-align: left;*/
+  }
+  
+
+  .leftAlign, li{
+    text-align: left;
+  }
+  .leftlele{
     text-align: left;
   }
