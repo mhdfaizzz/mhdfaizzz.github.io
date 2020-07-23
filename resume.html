@@ -15,7 +15,7 @@
   </header>
 
   <body>
-    <div class="leftlele">
+    <div class="leftlele" id="produce_pdf">
     <h2>Mohammed Faizan</h2>
     <a href="mailto:mhd.faizan140@gmail.com">mhd.faizan140@gmail.com</a>
     <h4>+9100000000</h4>
@@ -45,13 +45,33 @@
 <p>LANGUAGES KNOWN : English, Hindi, Kannada, Telugu.</p>                                     
 
 </div>
-
+<button onclick="callme()">Generate PDF</button>
    
     <!-- don't post physical address, personal phone number or other personal information on the web! -->
-
-    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
    
+    <script>
+//      function callme() {
+//       var pdf = new jsPDF('p', 'pt', 'a4');
+//     pdf.addHTML(document.getElementById("produce_pdf"));
+//      function generate() {
+
+//         ps_filename = "Faizan_EPCET_ECE";
+//         pdf.save(ps_filename+'.pdf');
+//     };
+//     generate();
+// }
+function callme() {
+  var pdf = new jsPDF('p', 'pt', 'letter');
+  pdf.canvas.height = 72 * 11;
+  pdf.canvas.width = 72 * 8.5;
+
+  pdf.fromHTML(document.getElementById("produce_pdf"));
+
+  pdf.save('"Faizan_EPCET_ECE".pdf');
+};
+
+</script>
   </body>
 
   <footer>
