@@ -15,12 +15,13 @@
   </header>
 
   <body>
-    <div class="leftlele" id="produce_pdf">
+    <div class="leftAlign" id="produce_pdf">
     <h2>Mohammed Faizan</h2>
-    <a href="mailto:mhd.faizan140@gmail.com">mhd.faizan140@gmail.com</a>
+    <a href="mailto:abc@yopmail.com">abc@yopmail.com</a>
     <h4>+9100000000</h4>
     <hr>
-<p>CAREER OBJECTIVE:  To work in a professional work driven environment that motivates me to utilize my potential  efficaciously with ample of opportunities for the up-gradation and growth of the company.
+<p>CAREER OBJECTIVE:  To work in a professional work driven environment that motivates me to utilize my potential</p>
+<p> efficaciously with ample of opportunities for the up-gradation and growth of the company.
 </p>
 <h3>EDUCATIONAL BACKGROUND:</h3>
 <ul>
@@ -30,22 +31,29 @@
 </ul>
 <h3>Technical Skills:</h3>
 <ul>
-  <li><p>Languages known: C,C++,HTML,css,javascript.</p></li>
+  <li><p>Languages known: C,C++,HTML,css,javascript,AngularJS</p></li>
+  </li>
+</ul>
+<h3>Certifications & Accomplishments:</h3>
+<ul class="hoverCursor">
+  <li onclick="openFlyout('images/RPA.jpg')"><a>RPA developer foundation</a></li>
+  <li  onclick="openFlyout('images/Cisco.jpg')"><a>CISCO CCNA - Module 1</a></li>
+  <li ><a href="https://trailblazer.me/id/mfaizan7" target="_blank">Salesforce Trailhead<i class="fa fa-external-link"></i></a></li>
+
+  
   </li>
 </ul>
 <h3>PERSONAL INFORMATION:
 </h3>
 <p>NAME 		           : Mohammed Faizan
 </p>
-<p>DATE OF BIRTH            : 11/11/1999 (dd/mm/yyyy)</p>
-<p>FATHER NAME 	           : B.M.Usman</p>
 <p>NATIONALITY 	           : Indian</p>
-<p>HOBBIES 		           : Reading Novels,sketching, Surfing Internet.</p>
-<p>ADDRESS  	           : Door #48(E), Ward #23, Kanaka Street ,Radio Park,C.B. Bellary -583102.</p>
+<p>HOBBIES 		           : Reading Novels,sketching, Playing Cricket and Football</p>
 <p>LANGUAGES KNOWN : English, Hindi, Kannada, Telugu.</p>                                     
 
 </div>
-<button onclick="callme()">Generate PDF</button>
+ <div id="Flyout" class="flyout"><span onclick="closeFlyout()" class="close">&times;</span><img id="FlyoutImage"  src="" width="75%" alt="banner"></div>
+<button onclick="DownloadPDF()">Generate PDF</button>
    
     <!-- don't post physical address, personal phone number or other personal information on the web! -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
@@ -61,7 +69,7 @@
 //     };
 //     generate();
 // }
-function callme() {
+function DownloadPDF() {
   var pdf = new jsPDF('p', 'pt', 'letter');
   pdf.canvas.height = 72 * 11;
   pdf.canvas.width = 72 * 8.5;
@@ -70,7 +78,14 @@ function callme() {
 
   pdf.save('"Faizan_EPCET_ECE".pdf');
 };
-
+function openFlyout(val){
+document.getElementById("FlyoutImage").src = val;
+document.getElementById("Flyout").style.display = "block";
+};
+function closeFlyout(){
+  document.getElementById("FlyoutImage").src = "";
+  document.getElementById("Flyout").style.display = "none";
+};
 </script>
   </body>
 
