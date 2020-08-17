@@ -185,3 +185,6 @@ display: block;
 .hoverCursor li{
 cursor:pointer;
 }
+.setmargin{
+  margin:0;
+}
