@@ -99,7 +99,7 @@
   overflow: hidden;
   white-space: nowrap;
   box-sizing: border-box;
-  animation: marquee 50s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 .marquee:hover {
