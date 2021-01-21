@@ -85,6 +85,9 @@
   .leftAlign{
     text-align: left;
   }
+ .leftAlign div{
+    border: 1px solid white;
+  }
 
 
   /*test marquee*/
@@ -187,4 +190,9 @@ cursor:pointer;
 }
 .setmargin{
   margin:0;
+}
+
+.mainDiv{
+padding:30px;
+  border: 1px solid white;
 }
