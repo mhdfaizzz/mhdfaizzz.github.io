@@ -85,7 +85,7 @@
   .leftAlign{
     text-align: left;
   }
- .leftAlign div{
+ .leftAlign, div{
     border: 1px solid white;
   }
 
